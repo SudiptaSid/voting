@@ -1,0 +1,360 @@
+
+/* Variables */
+/* Plugin Edits */
+/* Base */
+* {
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #c9c9c9;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #575757;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212121;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+a,
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+
+a {
+  text-transform: inherit;
+  text-decoration: none;
+  color: #0063f7;
+}
+a:hover, a:focus {
+  color: #2179fd;
+  text-decoration: none;
+  outline: 0;
+}
+
+input,
+select {
+  height: auto;
+}
+
+select {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  color: #010101;
+}
+
+h1, .h1 {
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 40px;
+  }
+}
+
+h2, .h2 {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  h2, .h2 {
+    font-size: 32px;
+  }
+}
+
+h3, .h3 {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  h3, .h3 {
+    font-size: 28px;
+  }
+}
+
+h4, .h4 {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  h4, .h4 {
+    font-size: 24px;
+  }
+}
+
+h5, .h5 {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  h5, .h5 {
+    font-size: 20px;
+  }
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+section {
+  position: relative;
+}
+
+/* Components */
+.gap-y1 {
+  gap: 15px 0;
+}
+@media (min-width: 768px) {
+  .gap-y1 {
+    gap: 24px 0;
+  }
+}
+
+.gap-y2 {
+  gap: 24px 0;
+}
+@media (min-width: 768px) {
+  .gap-y2 {
+    gap: 32px 0;
+  }
+}
+
+.py-40 {
+  padding: 40px 0;
+}
+
+.py-60 {
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  .py-60 {
+    padding: 60px 0;
+  }
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 14px 24px;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  white-space: nowrap;
+  box-shadow: none;
+  outline: none;
+}
+.btn:hover, .btn:focus, .btn:active {
+  box-shadow: none;
+  outline: none;
+}
+.btnPrimary {
+  color: #ffffff;
+  background-color: #0063f7;
+  border-color: #4790ff;
+}
+.btnPrimary:hover, .btnPrimary:focus, .btnPrimary:active {
+  color: #ffffff;
+  background-color: #2179fd;
+  border-color: #4790ff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group > label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #010101;
+  margin-bottom: 4px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.form-group .inputBox {
+  position: relative;
+}
+.form-group .inputBox .form-control {
+  color: #010101;
+  background-color: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  padding: 14px 15px;
+  padding-left: 40px;
+  font-size: 1em;
+  line-height: 1.6;
+  white-space: nowrap;
+  box-shadow: none;
+  outline: none;
+}
+.form-group .inputBox .form-control:hover, .form-group .inputBox .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.form-group .inputBox .form-control:focus {
+  border-color: #0063f7;
+}
+.form-group .inputBox .form-control::placeholder {
+  color: #575757;
+}
+.form-group .inputBox em {
+  font-size: 1.2em;
+  color: #575757;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.form-group small, .form-group .small {
+  font-size: 11px;
+  display: inline-block;
+}
+
+.imgCheckbox {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  cursor: pointer;
+  user-select: none;
+}
+.imgCheckbox .checkmark {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 24px;
+  width: 24px;
+  background-color: #ffffff;
+  border: 1px solid #575757;
+  border-radius: 4px;
+}
+.imgCheckbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.imgCheckbox .imgSec img {
+  width: 100%;
+}
+.imgCheckbox .detailsSec {
+  padding: 10px 15px;
+  background-color: #ffffff;
+}
+.imgCheckbox .detailsSec h6, .imgCheckbox .detailsSec .h6 {
+  margin-bottom: 0;
+  font-size: 1em;
+  color: #010101;
+}
+.imgCheckbox .detailsSec h6 span:last-child, .imgCheckbox .detailsSec .h6 span:last-child {
+  font-weight: 400;
+  color: #212121;
+}
+.imgCheckbox .detailsSec h6 + h6, .imgCheckbox .detailsSec .h6 + h6, .imgCheckbox .detailsSec h6 + .h6, .imgCheckbox .detailsSec .h6 + .h6 {
+  margin-top: 10px;
+}
+.imgCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.imgCheckbox input:checked ~ .checkmark {
+  background-color: #0063f7;
+  border-color: #0063f7;
+}
+.imgCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.imgCheckbox input:checked ~ .detailsSec {
+  background-color: #0063f7;
+}
+.imgCheckbox input:checked ~ .detailsSec h6, .imgCheckbox input:checked ~ .detailsSec .h6 {
+  color: #ffffff;
+}
+.imgCheckbox input:checked ~ .detailsSec h6 span:last-child, .imgCheckbox input:checked ~ .detailsSec .h6 span:last-child {
+  color: #ffffff;
+}
+
+.sectionTitle h1, .sectionTitle .h1,
+.sectionTitle h2,
+.sectionTitle .h2,
+.sectionTitle h3,
+.sectionTitle .h3 {
+  margin: 0;
+  font-weight: 600;
+}
+.sectionTitle p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+@media (min-width: 768px) {
+  .sectionTitle p {
+    font-size: 18px;
+  }
+}
+
+/* Layouts */
+/* Pages */
+.loginOne .loginBox {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.loginOne .loginBox form {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 24px;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px #c9c9c9;
+}
+.loginOne .loginBox form h4, .loginOne .loginBox form .h4 {
+  margin-bottom: 24px;
+}/*# sourceMappingURL=style.css.map */

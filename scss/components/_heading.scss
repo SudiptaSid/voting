@@ -1,0 +1,14 @@
+// Heading
+.sectionTitle {
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    p {
+        @include paraL;
+        margin: 12px 0 0;
+    }
+}

@@ -1,0 +1,153 @@
+// Form Control
+.form-group {
+    margin-bottom: 15px;
+
+    > label {
+        font-size: 13px;
+        font-weight: 600;
+        color: clr(black, main);
+        margin-bottom: 4px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .inputBox {
+        position: relative;
+
+        .form-control {
+            color: clr(black, main);
+            background-color: clr(light, outline);
+            border: 1px solid clr(black, outline);
+            border-radius: 6px;
+            padding: 14px 15px;
+            padding-left: 40px;
+            font-size: 1em;
+            line-height: 1.6;
+            white-space: nowrap;
+            box-shadow: none;
+            outline: none;
+
+            &:hover,
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+
+            &:focus {
+                border-color: clr(primary, main);
+            }
+
+            &::placeholder {
+                color: clr(black, focus);
+            }
+        }
+
+        em {
+            font-size: 1.2em;
+            color: clr(black, focus);
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+        }
+    }
+
+    small {
+        font-size: 11px;
+        display: inline-block;
+    }
+}
+
+// Checkbox
+.imgCheckbox {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+
+    .checkmark {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: 24px;
+        width: 24px;
+        background-color: clr(light, outline);
+        border: 1px solid clr(black, focus);
+        border-radius: 4px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 7px;
+            top: 3px;
+            width: 7px;
+            height: 12px;
+            border: solid clr(light, outline);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    .imgSec {
+        img {
+            width: 100%;
+        }
+    }
+
+    .detailsSec {
+        padding: 10px 15px;
+        background-color: clr(light, outline);
+
+        h6 {
+            margin-bottom: 0;
+            font-size: 1em;
+            color: clr(black, main);
+
+            span {
+                &:last-child {
+                    font-weight: 400;
+                    color: clr(black, hover);
+                }
+            }
+
+            + h6 {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: clr(primary, main);
+            border-color: clr(primary, main);
+
+            &:after {
+                display: block;
+            }
+        }
+
+        &:checked ~ .detailsSec {
+            background-color: clr(primary, main);
+
+            h6 {
+                color: clr(light, outline);
+
+                span {
+                    &:last-child {
+                        color: clr(light, outline);
+                    }
+                }
+            }
+        }
+    }
+}

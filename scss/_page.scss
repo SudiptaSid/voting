@@ -1,0 +1,21 @@
+// Login One
+.loginOne {
+    .loginBox {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+
+        form {
+            background-color: clr(light, outline);
+            width: 100%;
+            padding: 24px;
+            border: 1px solid clr(black, outline);
+            border-radius: 6px;
+            box-shadow: 0px 10px 20px rgba(clr(black, outline), 1);
+
+            h4 {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

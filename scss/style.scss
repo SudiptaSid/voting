@@ -1,0 +1,36 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Font Awesome */
+@import "../vendors/fontawesome/scss/fontawesome";
+@import "../vendors/fontawesome/scss/solid";
+@import "../vendors/fontawesome/scss/brands";
+@import "../vendors/fontawesome/scss/regular";
+
+/* Bootstrap */
+@import "../vendors/bootstrap/scss/bootstrap";
+
+/* Variables */
+@import "variables/color";
+@import "variables/font";
+@import "variables/breakpoint";
+
+/* Plugin Edits */
+@import "plugin-edit/bootstraps";
+
+/* Base */
+@import "base/reset";
+
+/* Components */
+@import "components/units";
+@import "components/button";
+@import "components/input";
+
+@import "components/heading";
+
+/* Layouts */
+@import "layout/header";
+@import "layout/footer";
+
+/* Pages */
+@import "page.scss";
